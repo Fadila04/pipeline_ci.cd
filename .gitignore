@@ -1,0 +1,6 @@
+# Environnements
+.venv
+.env
+
+# Dossier Mlflow runs
+mlruns
