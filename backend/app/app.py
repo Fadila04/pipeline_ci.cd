@@ -8,8 +8,6 @@ app = FastAPI()
 
 MODEL_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "model", "model.pkl")
 
-
-
 @app.get("/")
 def root():
     return {"status": "OK"}
