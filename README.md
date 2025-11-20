@@ -27,6 +27,7 @@ docker-compose up --build
 # lorsque le port ne fonctionne pas
  lsof -i:8000
 docker-compose down
+docker push , images
 
 
 
