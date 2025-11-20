@@ -26,7 +26,7 @@ jobs:
       - name: Lint with Ruff
         run: |
           pip install ruff
-          ruff check .
+          ruff check . --fix
 
         # Étape Ruff (format code)
       - name: Lint with Ruff
