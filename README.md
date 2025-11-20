@@ -22,3 +22,19 @@ st.number_input("Largeur Pétale", value=0.0)
 
 docker build -t fastapi-backend .
 docker run -p 8000:8000 fastapi-backend
+
+
+docker-compose up --build
+
+
+
+
+
+
+
+
+
+
+
+
+

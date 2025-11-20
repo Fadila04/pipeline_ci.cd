@@ -1,0 +1,77 @@
+
+services:
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: fastapi-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    command: uvicorn app.app:app --host 0.0.0.0 --port 8000
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: streamlit-frontend
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./frontend:/streamlit_app
+    command: streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+    depends_on:
+      - backend   
+    networks:
+      - app-network
+
+networks:
+  app-network:
+
+
+
+
+
+
+
+
+
+
+
+
+
+# services:
+#   backend:
+#     build:
+#       context: ./backend
+#       dockerfile: Dockerfile
+#     container_name: fastapi-backend
+#     ports:
+#       - "8000:8000"
+#     volumes:
+#       - ./backend:/app.app
+#     networks:
+#       - webnet
+
+#   frontend:
+#     build:
+#       context: ./frontend
+#       dockerfile: Dockerfile
+#     container_name: streamlit-frontend
+#     ports:
+#       - "8501:8501"
+#     volumes:
+#       - ./frontend:/streamlit_app
+#     environment:
+#       BACKEND_URL: "http://backend:8000"
+#     depends_on:
+#       - backend
+#     networks:
+#       - webnet
+
+# networks:
+#   webnet:

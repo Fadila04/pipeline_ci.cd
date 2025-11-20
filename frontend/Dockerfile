@@ -7,6 +7,7 @@ WORKDIR /streamlit_app
 # 3. Copier les dépendances
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+RUN apt-get update && apt-get install -y curl
 
 # 4. Copier le reste du projet
 COPY . .
