@@ -1,5 +1,6 @@
 import streamlit as st
 import requests
+import pillow
 
 API_URL = "https://fadilatoubackend-e3fseufddgh3apbb.francecentral-01.azurewebsites.net/"
 # API_URL = "http://backend:8000"
