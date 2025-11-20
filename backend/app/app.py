@@ -4,6 +4,7 @@ import joblib
 from pydantic import BaseModel
 from fastapi import HTTPException
 
+
 app = FastAPI()
 
 MODEL_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "model", "model.pkl")
