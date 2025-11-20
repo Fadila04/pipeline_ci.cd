@@ -22,6 +22,12 @@ jobs:
         with:
           python-version: "3.10"
 
+        #  Étape Ruff (linter)
+      - name: Lint with Ruff
+        run: |
+          pip install ruff
+          ruff check .
+          
       # 3. Installer dépendances backend
       - name: Install backend dependencies
         run: |
