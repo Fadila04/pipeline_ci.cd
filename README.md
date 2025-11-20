@@ -26,6 +26,8 @@ docker run -p 8000:8000 fastapi-backend
 
 docker-compose up --build
 
+ lsof -i:8000
+docker-compose down
 
 
 
