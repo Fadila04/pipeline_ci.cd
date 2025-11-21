@@ -201,18 +201,16 @@ DOCKERHUB_TOKEN
 Deux Web Apps :
 
 - Backend
-
 Type : "Deploy from container"
 
 Source : DockerHub <username>/backend:latest
 
 Port exposé : 8000
 
-Doc accessible via :
+accessible via :
 https://fadilatoubackend-e3fseufddgh3apbb.francecentral-01.azurewebsites.net/docs
 
-2️⃣ Frontend
-
+- Frontend
 Type : container
 
 Source : <username>/frontend:latest
@@ -220,9 +218,9 @@ Source : <username>/frontend:latest
 Ajouter une variable d’environnement :
 
 BACKEND_URL = https://votre-backend.azurewebsites.net/predict
+accessible via : https://fadilatoufrontend-gyh4h5h5d5fkhdfs.francecentral-01.azurewebsites.net/
 
 Erreur fréquente corrigée : Failed to resolve 'backend'
-
 ➡️ solution : utiliser l’URL Azure, pas backend:8000.
 
 12. Fonctionnement final
@@ -293,6 +291,9 @@ docker-compose up --build
  lsof -i:8000
 docker-compose down
 docker push , images -->
+
+# Azure 
+Tout les detail du deploiement
 
 
 

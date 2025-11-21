@@ -27,12 +27,6 @@ jobs:
         run: |
           pip install ruff
           ruff check . --fix
-
-        # Étape Ruff (format code)
-      - name: Lint with Ruff
-        run: |
-          pip install ruff
-          ruff check .
           
       # 3. Installer dépendances backend
       - name: Install backend dependencies
