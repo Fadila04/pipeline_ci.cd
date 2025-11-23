@@ -261,6 +261,8 @@ Il permet de comprendre les pratiques modernes de développement et déploiement
 
 
 
+
+
 <!-- # pipeline_ci.cd
 
 # Pour lancer FastAPI

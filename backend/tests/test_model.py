@@ -19,7 +19,7 @@ def test_model_prediction():
     model_path = os.path.join("model", "model.pkl")
     model = joblib.load(model_path)
 
-    sample = [5.1, 3.5, 1.4, 0.2]  # Le point du dataset Iris
+    sample = [5.1, 3.5, 1.4, 0.2] 
     pred = model.predict([sample])[0]
 
     assert pred == 0

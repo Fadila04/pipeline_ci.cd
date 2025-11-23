@@ -1,1 +1,7 @@
 site_name: My Docs
+
+site_name: Documentation Projet
+
+nav:
+  - Accueil: index.md
+  - Projet: projet.md
