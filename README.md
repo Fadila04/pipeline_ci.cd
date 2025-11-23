@@ -123,10 +123,10 @@ Le frontend permet :
 👉 En Docker Compose (développement local)
 API_URL = "http://backend:8000/predict"
 
-👉 En local (backend hors Docker)
+ En local (backend hors Docker)
 API_URL = "http://localhost:8000/predict"
 
-👉 Sur Azure
+ Sur Azure
 API_URL = "https://VOTRE_BACKEND.azurewebsites.net/predict"
 
 6. Tests automatisés
